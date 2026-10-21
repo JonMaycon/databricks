@@ -1,6 +1,6 @@
 # Lakehouse de Portfólio de Projetos · Databricks
 
-Projeto de engenharia e análise de dados no **Databricks** que consolida o portfólio de projetos da **Vértice**, uma empresa cujos projetos estão espalhados em três ferramentas diferentes (Excel, ClickUp e MS Project), além de dados de PMO, RH, timesheet, financeiro e compras.
+Projeto de engenharia e análise de dados no **Databricks** que consolida o portfólio de projetos da **Nexus**(empresa fictíticia), uma empresa cujos projetos estão espalhados em três ferramentas diferentes (Excel, ClickUp e MS Project), além de dados de PMO, RH, timesheet, financeiro e compras.
 
 O objetivo é responder, com dados, às perguntas do dono da empresa:
 
