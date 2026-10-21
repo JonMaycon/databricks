@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 680" width="1280" height="680" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475467"/>
+    </marker>
+    <marker id="arrd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#98A2B3"/>
+    </marker>
+  </defs>
+
+  <rect width="1280" height="680" fill="#FFFFFF"/>
+
+  <!-- Título -->
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#101828">Arquitetura do Lakehouse: Portfólio de Projetos da Vértice</text>
+  <text x="40" y="68" font-size="13" fill="#667085">Databricks · Unity Catalog · Arquitetura medalhão · Genie</text>
+
+  <!-- Legenda -->
+  <g transform="translate(905,34)">
+    <line x1="0" y1="8" x2="34" y2="8" stroke="#475467" stroke-width="2" marker-end="url(#arr)"/>
+    <text x="42" y="12" font-size="12" fill="#475467">implementado</text>
+    <line x1="150" y1="8" x2="184" y2="8" stroke="#98A2B3" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrd)"/>
+    <text x="192" y="12" font-size="12" fill="#475467">próximas etapas</text>
+  </g>
+
+  <!-- Cabeçalhos de coluna -->
+  <g font-size="12" font-weight="700" fill="#667085" letter-spacing="1">
+    <text x="40" y="112">FONTES</text>
+    <text x="300" y="112">INGESTÃO</text>
+    <text x="520" y="112">BRONZE</text>
+    <text x="820" y="112">SILVER / GOLD</text>
+    <text x="1060" y="112">CONSUMO</text>
+  </g>
+
+  <!-- ===== FONTES ===== -->
+  <g font-size="13">
+    <g transform="translate(40,128)">
+      <rect width="200" height="58" rx="8" fill="#ECFDF3" stroke="#12B76A"/>
+      <text x="14" y="24" font-weight="700" fill="#054F31">Excel</text>
+      <text x="14" y="44" font-size="12" fill="#344054">20 planilhas .xlsx</text>
+    </g>
+    <g transform="translate(40,196)">
+      <rect width="200" height="58" rx="8" fill="#F4F3FF" stroke="#7A5AF8"/>
+      <text x="14" y="24" font-weight="700" fill="#3E1C96">ClickUp</text>
+      <text x="14" y="44" font-size="12" fill="#344054">25 exports da API (.json)</text>
+    </g>
+    <g transform="translate(40,264)">
+      <rect width="200" height="58" rx="8" fill="#EFF8FF" stroke="#2E90FA"/>
+      <text x="14" y="24" font-weight="700" fill="#194185">MS Project</text>
+      <text x="14" y="44" font-size="12" fill="#344054">15 arquivos .xml</text>
+    </g>
+    <g transform="translate(40,332)">
+      <rect width="200" height="58" rx="8" fill="#F9FAFB" stroke="#98A2B3"/>
+      <text x="14" y="24" font-weight="700" fill="#101828">PMO</text>
+      <text x="14" y="44" font-size="12" fill="#344054">projetos · status semanal (.csv)</text>
+    </g>
+    <g transform="translate(40,400)">
+      <rect width="200" height="58" rx="8" fill="#F9FAFB" stroke="#98A2B3"/>
+      <text x="14" y="24" font-weight="700" fill="#101828">RH / Timesheet</text>
+      <text x="14" y="44" font-size="12" fill="#344054">colaboradores · apontamentos</text>
+    </g>
+    <g transform="translate(40,468)">
+      <rect width="200" height="58" rx="8" fill="#F9FAFB" stroke="#98A2B3"/>
+      <text x="14" y="24" font-weight="700" fill="#101828">Financeiro / Compras</text>
+      <text x="14" y="44" font-size="12" fill="#344054">custos · entregas fornecedor</text>
+    </g>
+  </g>
+
+  <!-- ===== CATÁLOGO ===== -->
+  <rect x="280" y="90" width="740" height="560" rx="14" fill="none" stroke="#FF3621" stroke-width="1.5" stroke-dasharray="2 0"/>
+  <rect x="300" y="618" width="300" height="22" rx="4" fill="#FFFFFF"/>
+  <text x="300" y="634" font-size="13" font-weight="700" fill="#C4320A">Catálogo lakehouse  ·  Unity Catalog</text>
+
+  <!-- Volume raw -->
+  <g transform="translate(300,236)">
+    <rect width="180" height="186" rx="10" fill="#FFF6ED" stroke="#FB6514" stroke-width="1.5"/>
+    <text x="16" y="30" font-size="15" font-weight="700" fill="#7E2410">Volume raw</text>
+    <text x="16" y="52" font-size="11" fill="#344054" font-family="Consolas, Menlo, monospace">/Volumes/lakehouse/</text>
+    <text x="16" y="67" font-size="11" fill="#344054" font-family="Consolas, Menlo, monospace">bronze/raw/</text>
+    <line x1="16" y1="82" x2="164" y2="82" stroke="#FDDCAB"/>
+    <text x="16" y="104" font-size="12" fill="#344054">arquivos originais,</text>
+    <text x="16" y="120" font-size="12" fill="#344054">sem conversão</text>
+    <rect x="16" y="138" width="148" height="30" rx="6" fill="#FFFFFF" stroke="#FB6514"/>
+    <text x="90" y="158" font-size="12" font-weight="700" fill="#7E2410" text-anchor="middle" font-family="Consolas, Menlo, monospace">read_files()</text>
+  </g>
+
+  <!-- Bronze -->
+  <g transform="translate(520,128)">
+    <rect width="260" height="470" rx="10" fill="#FEF6EE" stroke="#B54708" stroke-width="1.5"/>
+    <text x="18" y="32" font-size="16" font-weight="700" fill="#7A2E0E">lakehouse.bronze</text>
+    <text x="18" y="52" font-size="12" fill="#667085">dado como veio, tudo texto (CSV/Excel)</text>
+    <g font-size="12.5" fill="#344054" font-family="Consolas, Menlo, monospace">
+      <text x="18" y="84">▪ projetos</text>
+      <text x="18" y="106">▪ status_semanal</text>
+      <text x="18" y="128">▪ excel_tarefas</text>
+      <text x="18" y="150">▪ clickup_tarefas</text>
+      <text x="18" y="172">▪ msproject_tarefas</text>
+      <text x="18" y="194">▪ colaboradores</text>
+      <text x="18" y="216">▪ apontamentos</text>
+      <text x="18" y="238">▪ custos</text>
+      <text x="18" y="260">▪ entregas_fornecedor</text>
+    </g>
+    <text x="18" y="290" font-size="12" fill="#667085">9 tabelas Delta</text>
+    <line x1="18" y1="306" x2="242" y2="306" stroke="#F7B27A"/>
+    <rect x="18" y="322" width="224" height="128" rx="8" fill="#FFFFFF" stroke="#B54708" stroke-dasharray="0"/>
+    <text x="32" y="346" font-size="11" font-weight="700" fill="#B54708" letter-spacing="1">VIEW</text>
+    <text x="32" y="368" font-size="13" font-weight="700" fill="#101828" font-family="Consolas, Menlo, monospace">rascunho_tarefas</text>
+    <text x="32" y="392" font-size="12" fill="#344054">Excel + ClickUp + MS Project</text>
+    <text x="32" y="410" font-size="12" fill="#344054">unificados: datas, % e horas</text>
+    <text x="32" y="428" font-size="12" fill="#344054">padronizados por projeto</text>
+  </g>
+
+  <!-- Silver / Gold (planejado) -->
+  <g transform="translate(820,180)">
+    <rect width="180" height="150" rx="10" fill="#F9FAFB" stroke="#98A2B3" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <text x="16" y="30" font-size="15" font-weight="700" fill="#475467">lakehouse.silver</text>
+    <text x="16" y="56" font-size="12" fill="#667085">dados limpos e tipados</text>
+    <text x="16" y="74" font-size="12" fill="#667085">(ex.: silver.tarefas)</text>
+    <rect x="16" y="104" width="96" height="24" rx="12" fill="#EAECF0"/>
+    <text x="64" y="120" font-size="11" font-weight="700" fill="#475467" text-anchor="middle">em construção</text>
+  </g>
+  <g transform="translate(820,370)">
+    <rect width="180" height="150" rx="10" fill="#F9FAFB" stroke="#98A2B3" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <text x="16" y="30" font-size="15" font-weight="700" fill="#475467">lakehouse.gold</text>
+    <text x="16" y="56" font-size="12" fill="#667085">KPIs de negócio</text>
+    <text x="16" y="74" font-size="12" fill="#667085">(SPI, CPI, estouro)</text>
+    <rect x="16" y="104" width="96" height="24" rx="12" fill="#EAECF0"/>
+    <text x="64" y="120" font-size="11" font-weight="700" fill="#475467" text-anchor="middle">em construção</text>
+  </g>
+
+  <!-- Consumo -->
+  <g transform="translate(1060,180)">
+    <rect width="190" height="150" rx="10" fill="#EFF8FF" stroke="#1570EF" stroke-width="1.5"/>
+    <text x="16" y="30" font-size="15" font-weight="700" fill="#102A56">Análises SQL</text>
+    <text x="16" y="54" font-size="12" fill="#344054">EVM: SPI, CPI, EAC</text>
+    <text x="16" y="72" font-size="12" fill="#344054">farol do gerente</text>
+    <text x="16" y="90" font-size="12" fill="#344054">projetos "melancia"</text>
+    <text x="16" y="118" font-size="12" font-weight="700" fill="#102A56">Estouro previsto:</text>
+    <text x="16" y="136" font-size="12" font-weight="700" fill="#102A56">R$ 6,47 mi</text>
+  </g>
+  <g transform="translate(1060,370)">
+    <rect width="190" height="150" rx="10" fill="#F4F3FF" stroke="#6938EF" stroke-width="1.5"/>
+    <text x="16" y="30" font-size="15" font-weight="700" fill="#2E125E">AI/BI Genie</text>
+    <text x="16" y="54" font-size="12" fill="#344054">perguntas em linguagem</text>
+    <text x="16" y="72" font-size="12" fill="#344054">natural sobre a view</text>
+    <line x1="16" y1="88" x2="174" y2="88" stroke="#D9D6FE"/>
+    <text x="16" y="110" font-size="12" font-weight="700" fill="#2E125E">Dashboard executivo</text>
+    <text x="16" y="128" font-size="12" font-weight="700" fill="#2E125E">com storytelling</text>
+  </g>
+
+  <!-- ===== SETAS ===== -->
+  <g stroke="#475467" stroke-width="1.6" fill="none">
+    <!-- fontes → volume -->
+    <path d="M240,157 C265,157 270,300 298,300" marker-end="url(#arr)"/>
+    <path d="M240,225 C262,225 270,310 298,310" marker-end="url(#arr)"/>
+    <path d="M240,293 L298,320" marker-end="url(#arr)"/>
+    <path d="M240,361 L298,340" marker-end="url(#arr)"/>
+    <path d="M240,429 C262,429 270,350 298,350" marker-end="url(#arr)"/>
+    <path d="M240,497 C265,497 270,360 298,360" marker-end="url(#arr)"/>
+    <!-- volume → bronze -->
+    <path d="M480,329 L518,329" marker-end="url(#arr)"/>
+    <!-- view → consumo (caminho atual) -->
+    <path d="M780,514 L800,514 Q806,514 806,520 L806,556 Q806,566 816,566 L1030,566 Q1040,566 1040,556 L1040,265 Q1040,255 1050,255 L1058,255" marker-end="url(#arr)"/>
+    <path d="M1040,445 L1058,445" marker-end="url(#arr)"/>
+  </g>
+  <circle cx="1040" cy="445" r="3.5" fill="#475467"/>
+  <text x="826" y="588" font-size="11.5" fill="#475467">consultas sobre a view</text>
+
+  <!-- planejado -->
+  <g stroke="#98A2B3" stroke-width="1.6" fill="none" stroke-dasharray="5 4">
+    <path d="M780,255 L818,255" marker-end="url(#arrd)"/>
+    <path d="M910,330 L910,368" marker-end="url(#arrd)"/>
+    <path d="M1000,445 L1034,445" />
+  </g>
+</svg>
