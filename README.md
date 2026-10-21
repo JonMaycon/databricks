@@ -105,19 +105,50 @@ Com a view e as tabelas de custo e status, o notebook calcula indicadores de **E
 
 ### 4. Storytelling com AI/BI Genie
 
-A partir da view `rascunho_tarefas`, foi criado um espaço **Genie** para fazer perguntas sobre o portfólio em linguagem natural. Com ele, foi gerado um **dashboard executivo com storytelling**, que organiza os insights em uma narrativa para a gestão:
+A partir da view `rascunho_tarefas`, foi criado um espaço **Genie** para fazer perguntas sobre o portfólio em linguagem natural. Com ele, foi gerado um **dashboard executivo com storytelling**, que organiza os insights em uma narrativa para a gestão. Visão geral: **60 projetos, 4.917 tarefas e 1,57 milhão de horas planejadas**.
 
-- **Visão geral do portfólio:** 60 projetos, 4.917 tarefas e 1,57 milhão de horas planejadas.
-- **Saúde do portfólio:** distribuição das tarefas por status de conclusão.
-- **Performance por ferramenta:** Excel, ClickUp e MS Project comparados.
-- **Evolução temporal:** taxa de conclusão ao longo do tempo.
-- **Projetos em risco crítico:** top 10 por horas pendentes.
-- **Casos de sucesso:** projetos 100% concluídos como referência.
-- **Carga de trabalho:** horas planejadas por mês.
-- **Recomendações:** ações priorizadas e próximos passos.
+#### Saúde do portfólio
+
+Distribuição das tarefas por faixa de conclusão.
+
+![Distribuição de status das tarefas](docs/img/genie/01-saude-portfolio.png)
+
+#### Performance por ferramenta
+
+Excel, ClickUp e MS Project comparados em volume de tarefas, horas e taxa de conclusão.
+
+![Métricas por ferramenta](docs/img/genie/02-metricas-ferramenta.png)
+
+![Performance e eficiência por ferramenta](docs/img/genie/03-performance-ferramenta.png)
+
+#### Evolução temporal
+
+Taxa média de conclusão das tarefas por mês de término.
+
+![Evolução da taxa de conclusão](docs/img/genie/04-evolucao-conclusao.png)
+
+#### Projetos em risco crítico
+
+Top 10 projetos por horas pendentes, com percentual concluído e prazo.
+
+![Top 10 projetos em risco crítico](docs/img/genie/05-projetos-risco.png)
+
+#### Casos de sucesso
+
+Top 10 projetos 100% concluídos, por total de horas entregues.
+
+![Top 10 projetos com 100% de conclusão](docs/img/genie/06-casos-sucesso.png)
+
+#### Carga de trabalho
+
+Horas planejadas por mês ao longo de 2025 e 2026.
+
+![Carga de trabalho mensal](docs/img/genie/07-carga-trabalho.png)
+
+O dashboard fecha com **recomendações** priorizadas e próximos passos para a gestão.
 
 <details>
-<summary>📊 Ver o dashboard gerado pela Genie</summary>
+<summary>📊 Ver o dashboard completo gerado pela Genie</summary>
 
 ![Dashboard executivo gerado pela Genie](docs/img/genie-storytelling.png)
 
@@ -182,7 +213,8 @@ databricks/
 │   └── img/
 │       ├── arquitetura.png        # versão PNG do diagrama
 │       ├── catalogo-bronze.png    # tabelas da bronze no Catalog Explorer
-│       └── genie-storytelling.png # dashboard gerado pela Genie
+│       ├── genie-storytelling.png # dashboard completo gerado pela Genie
+│       └── genie/                 # gráficos do dashboard, um por tema
 └── notebooks_lakehouse/
     └── migracao.ipynb             # ingestão bronze, view e análises
 ```
